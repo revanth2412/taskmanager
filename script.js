@@ -35,4 +35,11 @@ function savedata(){
 //     listContainer.innerHTML=localStorage.getItem("data");
 // }
 // showTask();
+function handleInputKeypress(e){
+    if(e.key === 'Enter')
+    {
+        addTask();
+    }
+}
+inputBox.addEventListener('keyup',handleInputKeypress);
 listContainer.innerHTML=localStorage.getItem("data");
